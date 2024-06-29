@@ -40,3 +40,4 @@ def print_list(input_list):
 
 print(print_list(DFS(graph, start_node)))
 print(print_list(BFS(graph, start_node)))
+ 
