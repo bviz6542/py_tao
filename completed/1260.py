@@ -1,7 +1,6 @@
 from collections import deque
 
 
-
 def DFS(graph, start_node):
     visited = []
     stack = [start_node]
