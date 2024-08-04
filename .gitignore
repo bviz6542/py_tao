@@ -1,5 +1,5 @@
+.venv/
 .vscode/
 .ipynb_checkpoints/
-prac.ipynb
-test.py
-test.txt
+
+practice.ipynb
