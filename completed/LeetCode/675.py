@@ -35,4 +35,3 @@ class Solution:
             if not find:
                 return -1
         return res
-
