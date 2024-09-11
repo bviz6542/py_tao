@@ -54,19 +54,24 @@ def fordFulkerson(graph, s, t, n):
         max_flow += min_remain
     return max_flow
 
-##
-##
-##
+
+
+### special case ###
 
 graph = [
-    [0, 10, 5, 0], 
-    [0, 0, 15, 5], 
-    [0, 0, 0, 10], 
-    [0, 0, 0, 0]
+    [0, 1, 0, 1, 0, 0, 0, 0],
+    [0, 0, 1, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 1, 0, 0, 0],
+    [0, 0, 0, 0, 1, 1, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 1],
+    [0, 0, 0, 0, 0, 0, 1, 0],
+    [0, 0, 0, 0, 0, 0, 0, 1],
+    [0, 0, 0, 0, 0, 0, 0, 0],
 ]
-s = 0  # source node
-t = 3  # sink node
-n = 4  # number of nodes
+
+s = 0
+t = 7
+n = 8
 
 max_flow = fordFulkerson(graph, s, t, n)
 print(max_flow)
