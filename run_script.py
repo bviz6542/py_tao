@@ -7,7 +7,6 @@ def main():
         print("Usage: python3 run_script.py <python file name>")
         sys.exit(1)
     
-    # script file
     script_name = sys.argv[1]
     script_files = glob.glob(f"{script_name}.py")
     if not script_files:
@@ -15,7 +14,6 @@ def main():
         sys.exit(1)
     script_file = script_files[0]
 
-    # input file
     input_filename = 'input.txt'
     try:
         with open(input_filename, 'r') as f:
@@ -24,7 +22,6 @@ def main():
         print(f"Input file {input_filename} not found.")
         sys.exit(1)
 
-    # run
     process = subprocess.Popen([sys.executable, script_file], stdin=subprocess.PIPE)
     process.communicate(input=input_data.encode())
 
