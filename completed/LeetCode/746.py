@@ -12,6 +12,6 @@ class Solution:
             acc[i] = min(acc[i-1], acc[i-2]) + cost[i]
             
         return min(acc[n-1], acc[n-2])
-    
+
 # sol = Solution()
 # print(sol.minCostClimbingStairs([1,100,1,1,1,100,1,1,100,1]))
